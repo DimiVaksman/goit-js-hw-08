@@ -61,9 +61,9 @@ function onInput(e) {
         function populateTextarea() {
             let data = localStorage.getItem(STORAGE_KEY);
             if (!data) return;
-            dataForm = JSON.parse(data);
-              refs.textarea.value = dataForm.message ?? '' ;
-              refs.input.value = dataForm.email ?? '';
+            formDate = JSON.parse(data);
+              refs.textarea.value = formDate.message ?? '' ;
+              refs.input.value = formDate.email ?? '';
       
           
           }
